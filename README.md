@@ -1,4 +1,5 @@
 # linebreakr
+https://www.npmjs.com/package/linebreakr
 
 Easy-to-use regex functions to format line breaks as Carriage Return Line Feed *CR LF* (Windows), Line Feed *LF* (Unix) and Carriage Return *CR* (Mac OS <= 9).
 
