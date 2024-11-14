@@ -1,6 +1,6 @@
 # linebreakr
 
-Easy-to-use regex functions to format line breaks as Carriage Return Line Feed *CR LF* (Windows), Line Feed *LF* (Unix) and Carriage Return *CR* (Mac OS <= 9)
+Easy-to-use regex functions to format line breaks as Carriage Return Line Feed *CR LF* (Windows), Line Feed *LF* (Unix) and Carriage Return *CR* (Mac OS <= 9).
 
 ## Installation
 
@@ -10,7 +10,7 @@ npm i linebreakr
 
 ## Usage
 
-A few examples of useful commands and/or tasks.
+Import the desired function(s) and pass in a string to normalize its line breaks.
 
 ```javascript
 import { crlf, lf, cr } from 'linebreakr';
