@@ -1,5 +1,5 @@
 {
-  "name": "linebreaker",
+  "name": "eol-utils",
   "version": "1.0.0",
   "author": "clhilgert",
   "files": [
@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "precommit": "npm test",
-    "build": "rm -rf dist && esbuild src/index.js --bundle --minify --outfile=dist/linebreaker.js --format=esm --sourcemap",
+    "build": "rm -rf dist && esbuild src/index.js --bundle --minify --outfile=dist/eol-utils.js --format=esm --sourcemap",
     "test": "jest"
   },
   "type": "module",
@@ -17,7 +17,7 @@
     }
   },
   "exports": {
-    ".": "./dist/linebreaker.js"
+    ".": "./dist/eol-utils.js"
   },
   "license": "MIT",
   "devDependencies": {

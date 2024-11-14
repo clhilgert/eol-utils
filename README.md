@@ -1,11 +1,11 @@
-# linebreaker
+# eol-utils
 
-Easy-to-use regex functions to format line breaks as Carriage Return Line Feed *CR LF* (Windows), Line Feed *LF* (Unix) and Carriage Return *CR* (Mac OS <= 9).
+Easy-to-use regex functions to format line breaks as Carriage Return Line Feed _CR LF_ (Windows), Line Feed _LF_ (Unix) and Carriage Return _CR_ (Mac OS <= 9).
 
 ## Installation
 
 ```sh
-npm i linebreaker
+npm i eol-utils
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm i linebreaker
 Import the desired function(s) and pass in a string to normalize its line breaks.
 
 ```javascript
-import { crlf, lf, cr } from 'linebreaker';
+import { crlf, lf, cr } from 'eol-utils';
 
 let str = '\rHello\nWorld\r\n';
 
