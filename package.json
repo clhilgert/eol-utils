@@ -1,9 +1,13 @@
 {
   "name": "linebreakr",
   "version": "1.0.0",
+  "author": "clhilgert",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "precommit": "npm test",
-    "build": "esbuild src/index.js --bundle --minify --outfile=dist/index.js",
+    "build": "rm -rf dist && esbuild src/index.js --bundle --minify --outfile=dist/linebreakr.js --format=esm --sourcemap",
     "test": "jest"
   },
   "type": "module",
@@ -12,10 +16,12 @@
       "^.+\\.js$": "babel-jest"
     }
   },
-  "author": "clhilgert",
+  "exports": {
+    ".": "./dist/linebreakr.js"
+  },
   "license": "MIT",
-  "description": "",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.25.9",
     "@babel/preset-env": "^7.26.0",
     "babel-jest": "^29.7.0",
     "esbuild": "^0.24.0",

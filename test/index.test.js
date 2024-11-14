@@ -1,4 +1,4 @@
-import { crlf, cr, lf } from '../src';
+import { crlf, cr, lf } from '../src/index.js';
 
 describe('index', () => {
   describe('crlf', () => {
