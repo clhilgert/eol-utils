@@ -28,7 +28,7 @@ describe('index', () => {
       expect(cr('line1\rline2')).toEqual('line1\rline2');
     });
     it('should replace lf with cr', () => {
-      expect(cr('Hello\nWorld')).toEqual('Hello\rWorld');
+      expect(cr('line1\nline2')).toEqual('line1\rline2');
     });
     it('should replace crlf with cr', () => {
       expect(cr('line1\r\nline2')).toEqual('line1\rline2');
@@ -45,7 +45,7 @@ describe('index', () => {
       expect(lf('line1\rline2')).toEqual('line1\nline2');
     });
     it('should replace lf with lf', () => {
-      expect(lf('Hello\nWorld')).toEqual('Hello\nWorld');
+      expect(lf('line1\nline2')).toEqual('line1\nline2');
     });
     it('should replace crlf with lf', () => {
       expect(lf('line1\r\nline2')).toEqual('line1\nline2');
